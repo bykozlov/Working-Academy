@@ -1,0 +1,547 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0%;
+    background-color: white;
+   
+}
+/*
+---------------------------------------------------------Encabezado-----------------------------------------------------------------------
+*/
+.head{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-family: sans-serif;
+    display: block;
+    background-color: #212529;
+
+}
+
+.head-grupo{
+    margin: 0rem 5rem;
+    padding: 0rem 0.75rem;
+}
+
+.head-grupo_elementos{
+    display: flex;
+    align-items: center;
+}
+
+.elementos-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.elementos-ul{
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.elementos-ul li a:hover{
+    transition: all .4s;
+    color: #6c757d;
+}
+
+.elementos-buscador{
+    margin-right: 1rem;
+}
+
+.input-buscar{
+    color: #FFFFFF;
+    padding: 0.375rem  0.75rem;
+    background-color: #212529;
+    border: 1px solid #6c757d;
+    border-radius: 0.25rem;
+}
+
+.nav-li{
+    padding: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-iniciar{
+    color: #f8f9fa;
+    margin-right: 0.5rem;
+    padding: 0.375rem  0.75rem;
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.logo_img{
+    width: 70px;
+    height: 74px;
+}
+
+
+.btn-registrar{
+    color: #000;
+    margin-right: 1rem;
+    background-color: #ffca2c;
+    padding: 0.375rem  0.75rem;
+    border: 1px solid #ffc720;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.usuario-img{
+    display: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.img-user{
+    content: url(../img/user2.png);
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 40px;
+    height: 38px;
+}
+
+.usuario-item-none, .usuario-item-block{
+    display: none;
+    min-width: 10rem;
+    margin: 0px;
+    position: absolute;
+    list-style: none;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+    inset: 56px 107px auto auto;
+}
+
+.usuario-item-block:hover{
+    background-color: #C0C0C0;
+    transition: all 0.4s;
+}
+
+.cerrar{
+    display: block;
+    font-size: 85%;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.filtro{
+    opacity: 0;
+    visibility: hidden;
+    order: 1;
+}
+
+
+/*
+---------------------------------------------------------Cuerpo-------------------------------------------------------------------------
+*/
+.link-carreras{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 316vw;
+    border-style: none;
+}
+
+.cuerpo{
+    width: 60vw;
+    margin: auto;
+}
+
+article{
+    width: 100%;
+}
+.articulo_1{
+    text-align: justify;
+}
+
+.articulo_1-img{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.articulo_1-img img{
+    width: 45%;
+    height: 280px;
+}
+
+.sobre{
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+.nuestro-div{
+    display: flex;
+}
+
+.nuestro_div-li{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 70%;
+}
+
+.nuestro_div-li li{
+    margin-bottom: 20px;
+}
+
+#li-ultimo{
+    margin: 0px;
+}
+
+.nuestro-img{
+    width: 30%;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.nuestro-img img{
+    width: 80%;
+    height: 200px;
+    padding: 0px 20px;
+}
+
+
+.articulo_1 p{
+    margin: 0%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.video_1{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.video_1 iframe{
+    margin: 20px 0px 50px 0px;
+    width: 60%;
+    display: inherit;
+    height: 350px;
+    box-sizing: border-box;
+}
+
+/*
+---------------------------------------------------------P.Página------------------------------------------------------------------------
+*/
+
+footer{
+    font-family: sans-serif;
+    background-color: #212529;
+    color:white;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.pie_Pagina_Centrado{
+    margin: 0 7.5rem;
+}
+
+.pie_Pagina{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: flex-start;
+}
+
+.seccion{
+    width: 100%;
+    justify-self: flex-start;
+    display: flex;
+}
+
+.s_Ayuda, .s_Menu, .s_Legal{
+    width: 25%;
+}
+
+.s_Menu p a:hover, .s_Ayuda a:hover, .s_Legal a:hover{
+    transition: all .4s;
+    color: #6c757d;
+}
+
+.s_Ayuda, .s_Menu, .s_Legal, p a{
+    text-decoration: none;
+    color: white;
+}
+
+.s_Ayuda a, .s_Legal a{
+    cursor: pointer;
+}
+
+.s_derechos_autor{
+    width: 100%;
+}
+
+.linea{
+    opacity: 5;
+    margin: 0;
+}
+
+
+.iconos_redes {
+    margin-top: 2%;
+    font-size: 200%;
+}
+
+.iconos_redes a{
+    text-align: center;
+}
+
+.facebook {
+    color: rgb(59, 89, 152);
+}
+
+.facebook i {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.youtube {
+    color: white;
+}
+
+.youtube i {
+    background-color: rgb(255, 0,0);
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.twitter {
+    color: white;
+}
+
+.twitter i {
+    background-color: rgb(0, 172, 238);
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.iconos_redes i {
+    width: 40px;
+}
+
+
+@media (max-width: 900px) {
+    .head-grupo_elementos{
+        flex-direction: column;
+    }
+
+    .elementos-ul{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .elementos-opciones_final{
+        margin-top: 10px;
+    }
+
+    .elementos-f{
+        display: none;
+        width: 54.45px;
+        height: 38px;
+        margin-top: 10px;
+    }
+
+    .usuario-item-none, .usuario-item-block{
+        position: relative;
+        top: 0px;
+    }
+
+    .nav-li{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1068px) {
+    .head-grupo{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .elementos-f{
+        display: none;
+        width: 54.45px;
+        height: 38px;
+    }
+
+    .usuario-item-none, .usuario-item-block{
+        position: relative;
+        top: 0px;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .articulo_1 h2{
+        font-size: 20px;
+    }
+
+    .cuerpo{
+        width: 80vw;
+        font-size: 15px;
+    }
+
+    .articulo_1-img img{
+        width: 40%;
+        object-fit: cover;
+    }
+
+    .nuestro-img{
+        width: 60%;
+    }
+
+    .nuestro-img img{
+        width: 60%;
+    }
+
+
+    .nuestro-div{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .nuestro_div-li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .video_1 iframe{
+        padding: 0;
+        width: 80%;
+        height: 300px;
+    }
+
+    .titulo h1{
+        font-size: 25px;
+    }
+
+    .pie_Pagina{
+        font-size: 15px;
+    }
+
+    .pie_Pagina_Centrado{
+        margin: 0;
+    }
+
+    .all1{
+        width: 80% !important; 
+        font-size: 15px;
+    }
+
+    .all1 p {
+        font-size: 15px !important;
+    }
+
+    .all1 a h2{
+        font-size: 20px !important;
+    }
+
+    #img1{
+        height: 200px;;
+    }
+}
+
+@media (max-width: 600px){
+    .articulo_1 h2{
+        font-size: 20px;
+    }
+
+    .cuerpo{
+        font-size: 12px;
+    }
+
+    .articulo_1-img img{
+        width: 35%;
+        height: 200px;
+    }
+
+    .nuestro-img img{
+        width: 80%;
+        height: 200px;
+    }
+
+    .video_1 iframe{
+        height: 200px;
+    }
+
+    .titulo h1{
+        font-size: 25px;
+    }
+
+    #img1{
+        height: 200px;
+    }
+}
+
+
+
+@media (max-width: 400px){
+    .articulo_1 h2{
+        font-size: 15px;
+    }
+
+    .cuerpo{
+        font-size: 12px;
+    }
+
+    .articulo_1-img img{
+        width: 80% ;
+        height: 150px;
+    }
+
+    .nuestro-img{
+        width: 80%;
+    }
+
+    .nuestro-img img{
+        width: 80%;
+        height: 150px;
+    }
+
+    .articulo_1-imagen_1{
+        margin-bottom: 10px;
+    }
+    .articulo_1-imagen_2{
+        margin-top: 10px;
+    }
+
+    .nuestro-div{
+        flex-direction: column;
+    }
+    
+    .nuestro_div-li{
+        margin-bottom: 20px;
+    }
+
+    .video_1 iframe{
+        height: 200px;
+    }
+
+    .titulo h1{
+        font-size: 25px;
+    }
+
+    #img1{
+        height: 200px;
+    }
+}
+

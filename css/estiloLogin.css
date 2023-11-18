@@ -1,0 +1,111 @@
+*{
+    font-family: sans-serif;
+}
+.sidenav{
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    background-color: #212529;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+}
+
+.text{
+    text-align: center;
+    color: #fff;
+    margin-top: 20%;
+    padding: 60px;
+}
+
+.seccion_login{
+    margin-left: 40%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+.seccion_login_a{
+    margin-top: 20%;
+}
+
+.titulo{
+    padding-left: 15px;
+}
+
+#in{
+    width: 335px;
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.control{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    display: block;
+    box-sizing: border-box; /* Se ajusta al contenido de la caja*/
+    --bg-pseudo : visible; /* Se utiliza un tipo de variable para cambiar las propiedades del psuedo elementos, que le vamos hacer a traves del js*/
+}
+
+.control::placeholder{
+    visibility: var(--bg-pseudo); /*Se dice a la propiedad que va a recibir dicha variable con el parametro correspondiente*/
+}
+
+.grupo{
+    margin-bottom: 1rem;
+    display: block;
+}
+
+#login{
+    cursor: pointer;
+    background-color: #212529;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+#registro{
+    cursor: pointer;
+    background-color: #6c757d;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+
+@media (max-width: 600px) {
+    .sidenav{
+        width: 100%;
+        height: 20%;
+        position: sticky;
+        padding: 0;
+    }
+
+    .text{
+        margin-top: 0;
+    }
+
+    .seccion_login{
+        margin: 0;
+
+    }
+    
+    .seccion_login_a{
+        margin: 0;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estiloLogin.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+</head>
+<body>
+    <div class="contenido">
+
+        <div class="sidenav">
+            <div class="text">
+                <a href="../index.html"><img class="logo_img" src="../img/logo.png" alt="Imagen no encontrada"></a>
+                <h2>Bienvenido a Working Academy</h2>
+            </div>
+         </div>
+
+            <section class="seccion_login">
+                <div class="seccion_login_a">
+                    <div class="titulo">
+                        <h2>Iniciar Sesión</h2>
+                    </div>
+                    
+                    <div class="formulario">
+                        <form id="in" class="formularioIniciar" onsubmit="logearse(this)" method="post">
+    
+                            <div class="grupo">
+                               <label>Correo Electrónico</label>
+                               <input type="text" name="txtCorreoIn" class="control" placeholder="Correo Electronico">
+                            </div>
+    
+                            <div class="grupo">
+                               <label>Contraseña</label>
+                               <input type="password" name="txtPasswordIn" class="control" placeholder="Contraseña">
+                            </div>
+    
+                            <div class="boton">
+                                <button type="submit" id = "login">Entrar</button>
+    
+                                <button type="button"  onclick="location.href='registro.html'" id = "registro">Registrarse</button>
+                            </div>
+                         </form>
+
+                    </div>
+                </div>
+            </section>
+</div>
+
+</body>
+<script src="../js/login.js"></script>
+</html>

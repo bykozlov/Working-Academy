@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registro</title>
+   <link rel="stylesheet" href="../css/estilo.css">
+   <link rel="stylesheet" href="../css/estiloRegistro.css">
+   <link rel="shortcut icon" href="../img/logo.png">
+</head>
+
+<body>
+   <div class="contenido">
+      <div class="sidenav">
+         <div class="text">
+            <a href="../index.html"><img class="logo_img" src="../img/logo.png" alt="Imagen no encontrada"></a>
+            <h2>Bienvenido a Working Academy</h2>
+         </div>
+      </div>
+
+
+      <section class="seccion_registro">
+         <div class="seccion_registro_a">
+            <div class="titulo">
+               <h2>Registrarse</h2>
+            </div>
+
+            <div class="formulario">
+               <form id="re" class="formularioRegistrar" onsubmit="registrarse(this)" method="post">
+
+                  <div class="grupo">
+                     <label>Nombre</label>
+                     <input type="text" class="control" name="txtNombres" placeholder="Ingrese su nombre">
+                  </div>
+
+                  <div class="grupo">
+                     <label>Apellidos</label>
+                     <input type="text" class="control" name="txtApellidos" placeholder="Ingrese sus apellidos">
+                  </div>
+
+                  <div class="grupo">
+                     <label>DNI</label>
+                     <input type="text" class="control" name="txtDni" placeholder="Ingrese su dni">
+                  </div>
+
+                  <div class="grupo">
+                     <label>Teléfono</label>
+                     <input type="text" class="control" name="txtTelefono" placeholder="Ingrese su número de teléfono">
+                  </div>
+
+                  <div class="grupo">
+                     <label>Fecha de nacimiento</label>
+                     <input type="date" class="control" name="txtFechaNaci">
+                  </div>
+
+                  <div class="grupo">
+                     <label>Tipo de cuenta</label>
+                     <select class="control" name="cmbTipoCuenta" onchange="mostrar(this)">
+                        <option value="0">-Seleciona-</option>
+                        <option value="1">Usuario</option>
+                        <option value="2">Empresa</option>
+                     </select>
+                  </div>
+
+                  <div class="grupo empresa">
+                     <label>Nombre de la empresa</label>
+                     <input type="text" class="control" name="txtNombreEmpr" placeholder="Ingrese el nombre">
+                  </div>
+
+                  <div class="grupo">
+                     <label>Correo Electrónico</label>
+                     <input type="text" class="control" name="txtCorreoReg" placeholder="ejemplo@gmail.com">
+                  </div>
+
+                  <div class="grupo">
+                     <label>Contraseña</label>
+                     <input type="password" class="control" name="txtContraseniaReg" placeholder="Ingrese contraseña">
+                  </div>
+
+                  <div class="grupo">
+                     <label>Confirmar Contraseña</label>
+                     <input type="password" class="control" name="txtConfirmarContrasenia"
+                        placeholder="Vuelve a ingresar la contraseña">
+                  </div>
+
+                  <div class="boton">
+                     <button type="submit" id="login">Registrar</button>
+
+                     <button type="button" onclick="location.href='login.html'" id="registro">Iniciar
+                        sesión</button>
+                  </div>
+               </form>
+             
+            </div>
+            
+         </div>
+      </section>
+   </div>
+  
+
+
+   </div>
+
+</body>
+<script src="../js/login.js"></script>
+
+</html>
